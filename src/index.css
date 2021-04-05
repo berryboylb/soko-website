@@ -1,13 +1,174 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@font-face {
+    font-family: 'SIMSUN';
+    src: local('SIMSUN'), url(./fonts/SIMSUN.ttf) format('truetype');
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+    font-family: 'SIMSUN';
+    height: 50px;
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.host {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+
+
+.title h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.title p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+.profile-image {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+
+.profile-image .icon {
+    font-size: 40px;
+    color: #aaa;
+    padding: 20%;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+
+.navlist {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.navlist li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: #aaa;
+    padding: 3%;
+    border-radius: 15px;   
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    font-family: 'SIMSUN';
+}
+
+.navlist li a p {
+    font-family: 'SIMSUN';
+}
+
+.navlist li a .icon {
+    padding: 3%;
+    font-size: 30px;
+    margin-right: 5%;
+}
+.navlist li a:hover {
+    opacity: 0.8;
+     background-color: #ddd;
+     color: #2666cc;
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    nav {
+        width: 100%;
+        overflow: hidden;
+    }
+    .host {
+        width: 50%;
+    }
+    .navlist {
+        width: 25%;
+    }
+
+    .navlist li a{
+        width: 100px;
+    }
+
+    .title h3 {
+        font-size: 18px;
+    }
+    
+    .title p {
+        font-size: 14px;
+    }
+    .navlist li a {
+        padding: 5%;
+    }
+    .profile-image .icon {
+        font-size: 30px;
+    }
+    .navlist li a .icon {
+        font-size: 25px;
+    }
+    .navlist li a p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        justify-content: space-between;
+        height: 10vh;
+        padding: 5%;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .host {
+        width: 100%;
+         justify-content: flex-start;
+         align-items: center;
+        
+    }
+
+    .title {
+        margin-left: 5%;
+    }
+    
+    .navlist {
+        display: none;
+    }
+
 }
