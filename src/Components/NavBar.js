@@ -1,15 +1,10 @@
-import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import store from '../store.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-// import { ReactComponent as CloseMenu } from "../close.svg";
-// import { ReactComponent as MenuIcon } from "../menu.svg";
 
 const NavBar = (props) => {
 
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
+    // const [click, setClick] = useState(false);
+    // const handleClick = () => setClick(!click);
 
     return ( 
 
@@ -25,7 +20,7 @@ const NavBar = (props) => {
                         </div>
                     </div>
             ))}
-            <ul className={click ? "nav-active" : "navlist"}>
+            <ul className={"navlist"}>
                 <li><Link to=""> <FontAwesomeIcon className = "icon" icon={['fas', 'shopping-bag']} /> <p>Bag</p></Link></li>
                 <li><Link to=""> <FontAwesomeIcon className = "icon" icon={['fas', 'user']}/> <p>Accounts</p></Link></li>
             </ul>

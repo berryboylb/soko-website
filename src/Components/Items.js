@@ -9,7 +9,7 @@ const Items = (props) => {
         <div>
             {props.items.map((item) => (
                 <div>
-                    <div className ="hostt" key= {item.id}>
+                    <div className ="hostt" key = {item.id}>
                         <h3>{item.Name}</h3>
                         <p>{item.price}</p>
                     </div>

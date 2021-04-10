@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import Items from './Items';
 import NavBar from './NavBar';
 import Search from './Search';
 const Home = () => {
@@ -19,6 +18,7 @@ const Home = () => {
             image_src: '',
             price: "7500",
             type: "bangle",
+            desc: "simple hand made bangle for fashion summer this 21st century",
             id: 1
         },
         {
@@ -26,6 +26,7 @@ const Home = () => {
             image_src: '',
             price: "4000",
             type: "bangle",
+            desc: "simple hand made bangle for fashion summer this 21st century",
             id: 2
         },
         {
@@ -33,6 +34,7 @@ const Home = () => {
             image_src: '',
             price: "140000",
             type: "shoe",
+            desc: "simple hand made shoes for fashion summer this 21st century",
             id: 3
         },
         {
@@ -40,6 +42,7 @@ const Home = () => {
             image_src: '',
             price: "10000",
             type: "bag",
+            desc: "simple hand made bags for fashion summer this 21st century",
             id: 4
         },
         {
@@ -47,6 +50,7 @@ const Home = () => {
             image_src: '',
             price: "10000",
             type: "Pendant",
+            desc: "simple hand made pendant for fashion summer this 21st century",
             id: 5
         },
         {
@@ -54,6 +58,7 @@ const Home = () => {
             image_src: '',
             price: "80000",
             type: "bag",
+            desc: "simple hand made bag for fashion summer this 21st century",
             id: 6
         },
         {
@@ -61,6 +66,7 @@ const Home = () => {
             image_src: '',
             price: "70000",
             type: "bag",
+            desc: "simple hand made bag for fashion summer this 21st century",
             id: 7
         },
         {
@@ -68,6 +74,7 @@ const Home = () => {
             image_src: '',
             price: "70000",
             type: "bag",
+            desc: "simple hand made bag for fashion summer this 21st century",
             id: 8
         },
         {
@@ -75,6 +82,7 @@ const Home = () => {
             image_src: '',
             price: "150000",
             type: "Shoe",
+            desc: "simple hand made shoes for fashion summer this 21st century",
             id: 9
         },
         {
@@ -82,6 +90,7 @@ const Home = () => {
             image_src: '',
             price: "100000",
             type: "bag",
+            desc: "simple hand made bag for fashion summer this 21st century",
             id: 10
         }
     ]);
@@ -90,8 +99,8 @@ const Home = () => {
     return ( 
         <div className= "home">
             <NavBar name = {name} />
-            <Search />
-            <Items  items = {items} />
+            <Search items = {items} />
+            {/* <Items  items = {items} /> */}
         </div> 
     );
 }

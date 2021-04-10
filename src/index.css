@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
 
 @font-face {
     font-family: 'SIMSUN';
@@ -171,4 +172,153 @@ nav {
         display: none;
     }
 
+}
+
+/* search starts here */
+
+.form {
+    height: 5vh;
+    width: 40%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 9999999999999999999999;
+}
+
+.form input {
+    width: 95%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    border: none;
+    background: #f0f0f0;
+}
+
+.form input::placeholder{
+    font-size: 14px;
+    color: gray;
+    text-decoration:  none solid rgba(0, 0, 0, 0.8);
+    line-height: 17px;
+}
+
+.form button {
+    width: 5%;
+    height: 100%;
+    padding: 2;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    border: none;
+    background: #f8de4b;
+    font-size: 14px;
+    color: #2d73f0;
+}
+
+.search-box {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    /* background: blue; */
+}
+
+.search-header {
+    height: 5vh;
+    border-bottom: 1px solid #ddd;
+    padding: 2%;
+    /* background: hotpink; */
+    display: flex;
+    align-items: center;
+}
+
+.search-header h3 {
+    font-size: 20px;
+    color: #262626;
+    margin-left: 2%;
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+}
+
+.search-box {
+    display: none;
+}
+
+.search-header p .chevron {
+    font-size: 16px;
+    color: #1e70bf;
+    padding: 2%;
+    display: block;
+}
+
+.items-con {
+    /* background: green; */
+    padding:5%;
+    display: inline-block !important;
+    width: 100%;
+    
+}
+
+.card {
+    /* display: flex; */
+    height: 300px;
+    width: 200px;
+    background-color: #fff;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    padding: .5%;
+    float: left;
+    margin: 4%;
+}
+
+.card .img-con {
+    height: 65%;
+    width: 100%;
+    background: #aaa;
+    border-radius: 5px;
+}
+
+.card .item-price {
+    height: 20%;
+    margin-top: 5%;
+    
+}
+
+.card .item-price h3 {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    padding: 2%;
+}
+
+.card .item-price p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #676767;
+    opacity: 0.7;
+}
+
+
+
+.card .button-bag {
+    height: 10%;
+    margin-top: 2%;
+    /* background: lightgreen; */
+}
+
+.card .button-bag button {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: none;
+    border: 1px solid #1e70bf;
+    color: #1e70bf;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    border-radius: 3px;
 }
